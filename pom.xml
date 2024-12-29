@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>selabpractice</groupId>
-  <artifactId>mavennewpractice</artifactId>
+  <groupId>selabpractise</groupId>
+  <artifactId>mavennewpractise</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>mavennewpractice</name>
+  <name>mavennewpractise</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -22,4 +22,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version> <!-- Use an appropriate version -->
+        <configuration>
+          <source>1.8</source> <!-- You can change this to 1.7 or another version as needed -->
+          <target>1.8</target> <!-- You can change this to 1.7 or another version as needed -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
